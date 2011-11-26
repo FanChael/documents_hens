@@ -1,0 +1,12 @@
+Using: doc -c/-m/-d/-help [path]
+    
+Example:
+    #no third parameter, defaultly use ./
+    @1--  doc -c 
+    @2--  doc -m
+    @3--  doc -d
+    @4--  doc -ud
+    @5--  doc -help 
+
+    @6--  doc -c video/
+    @7--  doc -m /home/akaedu/video/

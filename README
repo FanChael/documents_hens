@@ -1,0 +1,30 @@
+PROJ_NAME: Documents Manager
+DATE:   2011-11-18
+Author: huangleililei@gmail.com
+
+
+Description:
+    1.About movie manager.Because I find in my movie folder, many movies included, so I want to build directory for every movie by its name.So I decide to strtok its name, and use execlp function to run mkdir && mv .
+    2.Next I want to do like this for .c file, and I also want to study how to create Makefile for every .c file,thinking .....
+
+Need to prompt:
+    I use fork() to create process, then to call execlp() , so can handle cycle.Actually we can use system() function to do, beacause this function will run mkdir or mv with child process.
+    Next, we need to finish kinds of function.Like delete the file which is 0 bytes,need to thinking.....
+
+   Function prototype
+        doc -c/-m/-d  option[path]
+
+   A- Something I think it is used to do . I need to write document for my project, so I think I can desigser a fixed pattern Document plan, all the things will be done in this direcotory Document.So now I will to designser which file need to included.
+
+   B- Now I desigser the command parameters:
+        -c      means to handle .c file;
+        -m      means to handle movie file;
+        -d      means to create project's documents which format is doc; (可行性分析，需求分析(SRS)，概要设计(HLD)，详细系统设计(LLD)，测试计划及结果，使用手册)
+        -ud      means to delete project's documents which format is doc; (可行性分析，需求分析(SRS)，概要设计(HLD)，详细系统设计(LLD)，测试计划及结果，使用手册)
+      
+
+    B+ Third parameter:
+        null    means to handle current directory;
+        [path]  means to handle path directory;
+    
+
